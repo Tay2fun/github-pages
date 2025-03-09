@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Продажа Намеков</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Продажа Намеков</h1>
+            <p>Откройте для себя уникальные намеки, которые помогут вам в жизни и бизнесе!</p>
+        </div>
+    </header>
+
+    <section class="intro">
+        <div class="container">
+            <h2>Что такое намек?</h2>
+            <p>Намек — это тонкий, но мощный способ влияния на людей и ситуации. Наши намеки помогут вам добиться успеха в различных сферах жизни!</p>
+        </div>
+    </section>
+
+    <section class="offers">
+        <div class="container">
+            <h2>Наши предложения</h2>
+            <div class="offer-item">
+                <h3>Намек для бизнеса</h3>
+                <p>Узнайте, как незаметно влиять на сотрудников и партнёров.</p>
+                <button class="buy-btn" onclick="buyHint('Намек для бизнеса')">Купить</button>
+            </div>
+            <div class="offer-item">
+                <h3>Намек для отношений</h3>
+                <p>Помогите своим близким понимать вас без слов.</p>
+                <button class="buy-btn" onclick="buyHint('Намек для отношений')">Купить</button>
+            </div>
+            <div class="offer-item">
+                <h3>Намек для личного роста</h3>
+                <p>Секреты, которые помогут вам быть более уверенным.</p>
+                <button class="buy-btn" onclick="buyHint('Намек для личного роста')">Купить</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2>Связаться с нами</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Ваше имя" required>
+                <input type="email" id="email" placeholder="Ваш email" required>
+                <textarea id="message" placeholder="Ваше сообщение" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Продажа Намеков. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
